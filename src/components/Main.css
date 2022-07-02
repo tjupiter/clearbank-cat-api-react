@@ -1,0 +1,109 @@
+.main-cat-container {
+    margin: 0 auto;
+    gap: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-auto-rows: 6rem;
+    grid-auto-flow: dense;
+    padding: 0 1rem;    
+}
+
+/* CAT CARDS/IMAGES */
+
+.cat-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: .3rem;
+}
+
+/* GRID BOX CAT IMAGE CLASSES */
+.vertical {
+    grid-row: span 2;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.bigbox {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+
+@media screen and (min-width: 600px) {
+    .hero h2 {
+        font-size: 3.5rem;  
+    }
+    .hero--br{
+        margin-top: -2.5rem;
+    }
+    .hero--kittyland {
+        font-size: 3.5rem;
+    }
+
+    .hero--bottom-text{
+        font-size: 2rem;
+        bottom: 3rem;
+    }
+
+    .main-cat-container {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-auto-rows: 250px;
+        padding: 0 3rem;  
+        margin-bottom: 1.5rem;
+    }
+
+    .cat-image {
+        border-radius: 350px;
+        padding: .5rem;
+    }
+
+    footer {
+        padding: 1.4rem 0 .8rem;
+    }
+
+    footer h3 {
+        font-size: 2rem;
+        margin-bottom: -.2rem;
+    }
+
+    footer i {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .hero h2 {
+        font-size: 4.5rem;  
+    }
+    .hero--br{
+        margin-top: -3rem;
+    }
+    .hero--kittyland {
+        font-size: 5.5rem;
+        margin-top: 0;
+    }
+
+    .hero--bottom-text{
+        font-size: 2rem;
+        bottom: 2.5rem;
+    }
+
+    .main-cat-container {
+        max-width: 80%;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));  
+        margin: 3rem auto;
+    }
+
+    .cat-image {
+        border-radius: 350px;
+        padding: .5rem;
+    }
+}

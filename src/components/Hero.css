@@ -1,0 +1,45 @@
+.hero {
+    background-color: rgb(255, 255, 244);;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-top: -5rem;
+    font-weight: 900;
+}
+
+.hero--kittyland {
+    color: orange;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Fascinate Inline', cursive;
+    margin-top: -1rem;
+}
+
+.hero--br {
+    display: block;
+    content: '';
+    margin-top: -1rem;
+}
+
+.hero--bottom-text {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero--chevron {
+    font-size: 1.5rem;
+    margin-top: -.5rem;
+}
