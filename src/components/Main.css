@@ -8,6 +8,14 @@
     padding: 0 1rem;    
 }
 
+.loading-container {
+  margin: 3rem;
+  font-size: 2.7rem;
+  font-weight: 800;
+  text-align: center;
+  font-style: italic;
+}
+
 /* CAT CARDS/IMAGES */
 
 .cat-image {
@@ -37,9 +45,7 @@
     .hero h2 {
         font-size: 3.5rem;  
     }
-    .hero--br{
-        margin-top: -2.5rem;
-    }
+    
     .hero--kittyland {
         font-size: 3.5rem;
     }
@@ -82,9 +88,7 @@
     .hero h2 {
         font-size: 4.5rem;  
     }
-    .hero--br{
-        margin-top: -3rem;
-    }
+  
     .hero--kittyland {
         font-size: 5.5rem;
         margin-top: 0;

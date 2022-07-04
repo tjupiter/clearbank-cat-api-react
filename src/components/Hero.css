@@ -1,5 +1,24 @@
+.hero-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.cat-gif-container {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+}
+
+.hero-background {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
 .hero {
-    background-color: rgb(255, 255, 244);;
+    background-color: rgb(249, 249, 180);;
     height: 100vh;
     display: flex;
     justify-content: center;
