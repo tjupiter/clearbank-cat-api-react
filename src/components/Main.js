@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react'
-import './Main.css'
-import gsap from 'gsap'
+import React, { useEffect, useRef } from 'react';
+import './Main.css';
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Main() {
 
   const [catData, setCatData] = React.useState([]);
-  const mainContainer = useRef(null)
-  const [isDataLoading, setIsDataLoading] = React.useState(true)
+  const mainContainer = useRef(null);
+  const [isDataLoading, setIsDataLoading] = React.useState(true);
 
   
   // ===================
@@ -23,7 +23,7 @@ export default function Main() {
       }, [])
       const result = await res.json()
       setCatData(result);
-      setIsDataLoading(false)
+      setIsDataLoading(false);
     }
     fetchCatData()
   }, [])
@@ -54,8 +54,6 @@ export default function Main() {
         end: "bottom 40%"
       });
       ScrollTrigger.refresh()
-
-      // mobile view - there's a bug, animation not working. Some divs don't have the relevant class names, ie 'cat-container'
 
   }, [catData])
 

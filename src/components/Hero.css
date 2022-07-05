@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
+  overflow-x: hidden;
 }
 
 .cat-gif-container {
@@ -18,47 +19,47 @@
 }
 
 .hero {
-    background-color: rgb(249, 249, 180);;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+  background-color: rgb(249, 249, 180);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
 .hero h2 {
-    font-size: 2rem;
-    margin-top: -5rem;
-    font-weight: 900;
+  font-size: 2rem;
+  margin-top: -5rem;
+  font-weight: 900;
 }
 
 .hero--kittyland {
-    color: orange;
-    font-size: 2.5rem;
-    font-weight: 700;
-    font-family: 'Fascinate Inline', cursive;
-    margin-top: -1rem;
+  color: orange;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Fascinate Inline', cursive;
+  margin-top: -1rem;
 }
 
 .hero--br {
-    display: block;
-    content: '';
-    margin-top: -1rem;
+  display: block;
+  content: '';
+  margin-top: -1rem;
 }
 
 .hero--bottom-text {
-    font-size: 1rem;
-    font-weight: 200;
-    letter-spacing: 2px;
-    position: absolute;
-    bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero--chevron {
-    font-size: 1.5rem;
-    margin-top: -.5rem;
+  font-size: 1.5rem;
+  margin-top: -.5rem;
 }
