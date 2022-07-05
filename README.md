@@ -10,4 +10,4 @@ INSTRUCTIONS
 
 NOTES
 ---
-I used vanilla JavaScript for this project. I wanted to use React but because of the lack of time I decided not to. For the animation I used GSAP => https://greensock.com/docs/v3/Plugins/ScrollTrigger It was a fun little project to work on
+I used React to recreat a porject that was done in vanilla Js. For the animation I used GSAP => https://greensock.com/docs/v3/Plugins/ScrollTrigger 
