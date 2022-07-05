@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Main.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CatCard from './CatCard';
 
 export default function Main() {
 
-  const [catData, setCatData] = React.useState([]);
+  const [catData, setCatData] = useState([]);
+  const [isDataLoading, setIsDataLoading] = useState(true);
   const mainContainer = useRef(null);
-  const [isDataLoading, setIsDataLoading] = React.useState(true);
 
   
   // ===================
@@ -26,6 +27,7 @@ export default function Main() {
       setIsDataLoading(false);
     }
     fetchCatData()
+    // console.log(catData)
   }, [])
 
 
@@ -79,18 +81,12 @@ export default function Main() {
       }
 
       <section className="main-cat-container" ref={mainContainer}>
-      {/* replace div with Card.js component */}
         {catData.map((cat, index) => 
-          <div 
-            key={cat.id}
-            className={setClassName(index)}
-            >
-            <img 
-              src={cat.url}
-              alt="cat"
-              className="cat-image"
-              />
-          </div>  
+          <CatCard 
+            key={cat.id} 
+            cat={cat} 
+            index={index} 
+            setClassName={setClassName}/>
           )}
       </section>
     </>

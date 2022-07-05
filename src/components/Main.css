@@ -11,11 +11,12 @@
 .loading-container {
   background-color: rgb(249, 249, 180);
   padding: 2rem;
+  height: 15vh;
   font-size: 1.2rem;
   font-weight: 800;
   text-align: center;
   font-style: italic;
-  animation: glowMobile 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 /* CAT CARDS/IMAGES */
@@ -42,27 +43,16 @@
   grid-column: span 2;
 }
 
-@keyframes glowMobile {
+
+@keyframes glow {
   from {
     text-shadow: 5px 5px 20px black;
-    font-size: 1rem;
+    letter-spacing: normal;
   }
 
   to {
     text-shadow: 5px 10px 20px #345ac1;
-    font: 2rem;
-  }
-}
-
-@keyframes glowDesktop {
-  from {
-    text-shadow: 5px 5px 20px black;
-    font-size: 1.2rem;
-  }
-
-  to {
-    text-shadow: 5px 10px 20px #345ac1;
-    font: 3.2rem;
+    letter-spacing: 2px;
   }
 }
 
@@ -82,8 +72,8 @@
   }
 
   .loading-container {
-    font-size: 1.5rem;
-    animation: glowDesktop 2s ease-in-out infinite alternate;
+    padding: 3rem;
+    font-size: 3rem;
   }
 
   .main-cat-container {
